@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <p class="header">Лабораторна робота №2. Виконавець: Касіянчук Софія Денисівна, ТР-12</p>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#reg">Форма реєстрації</a></li>
+                <li class="nav-item"><a href="#login">Форма входу</a></li>
+                <li class="nav-item"><a href="#callback">Форма зворотнього зв'язку</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="hero-wrapper">
+                    <img src="./images/cat.jpg" alt="cat" class="photo1" width="100px">
+                    <p class="descr">Flexible Box Layout (Flexbox) - це CSS-модуль, який визначає набір властивостей
+                        для
+                        розміщення,
+                        вирівнювання і розподілу
+                        простору між елементами в контейнері, навіть якщо їх розмір невідомий або динамічний.Форми
+                        дозволяють отримувати інформацію від відвідувачів веб-сторінки. Списки розсилання,
+                        контактні дані, профіль
+                        користувача, логін і реєстрація, коментарі в блогах - все це реалізується за допомогою форм
+                        та
+                        їх елементів. Властивість position за замовчуванням встановлено значення static. Для зазначення
+                        положення елемента використовуються властивості top, left,
+                        bottom або right, які застосовуються до елементів без position.</p>
+                    <img src="./images/cat.jpg" alt="cat" class="photo2" width="100px">
+                    <img src="./images/cat.jpg" alt="cat" class="photo3" width="100px">
+                </div>
+                <div class="hero-thumb">
+                    <img src="./images/cat.jpg" alt="cat" class="photo4" width="200px">
+                    <img src="./images/cat.jpg" alt="cat" class="photo5" width="200px">
+                    <img src="./images/cat.jpg" alt="cat" class="photo6" width="200px">
+                </div>
+            </section>
+            <section id="reg">
+                <h2 class="reg-title">Форма реєстрації</h2>
+                <div class="registration">
+                    <form class="form">
+                        <img src="" alt="" class="reg-photo">
+                        <label for="user_name">Ім'я</label>
+                        <input type="text" name="user-name" id="user_name" placeholder="Ім'я" class="input-reg" />
+                        <label for="user_secondName">Прізвище</label>
+                        <input type="text" name="user-secondName" id="user_secondName" placeholder="Прізвище"
+                            class="input-reg" />
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="sex" value="man" checked />
+                                Чоловіча
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="woman" />
+                                Жіноча
+                            </label>
+                        </div>
+                        <label>
+                            Вік
+                            <input type="number" name="age" min="0" max="100" step="1" value="0" />
+                        </label>
+                        <div class="select" class="input-reg">
+                            <label for="country">Країна проживання</label>
+                            <select id="country" name="country">
+                                <option value="Ukraine" selected>Ukraine</option>
+                                <option value="USA">USA</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Germany">Germany</option>
+                            </select>
+                        </div>
+                        <label for="phone">Номер телефону</label>
+                        <input type="phone" name="user-phone" id="phone" placeholder="+38(0XX)XXX-XX-XX"
+                            class="input-reg" />
+                        <label for="social-network">Соцмережа</label>
+                        <input type="text" name="user-social-network" id="social-network"
+                            placeholder="Посилання на соц.мережу" class="input-reg" />
+                        <label for="email">Електронна пошта</label>
+                        <input type="email" name="email" id="email" placeholder="Ел. пошта" class="input-reg" />
+                        <label for="password">Пароль</label>
+                        <input type="password" name="user-password" id="password" placeholder="Пароль"
+                            class="input-reg" />
+                        <label>
+                            <input type="checkbox" name="checkbox" />
+                            Чи згідні Ви з умовами?
+                        </label>
+                        <button type="submit" class="form-button-submit">Зареєструватися</button>
+                        <button type="reset" class="form-button-reset">Відміна</button>
+                    </form>
+                </div>
+            </section>
+            <section id="login">
+                <h2 class="log-title">Форма входу:</h2>
+                <div class="log">
+                    <form>
+                        <label for="login"></label>
+                        <input type="text" name="login" id="login" placeholder="Логін" class="input-log" />
+                        <label for="password"></label>
+                        <input type="password" name="password" id="password" placeholder="Пароль" class="input-log" />
+                        <button type="submit" class="form-button-login">Вхід</button>
+                    </form>
+                </div>
+            </section>
+            <section class="callback" id="callback">
+                <h2 class="callback-title">Форма зворотнього зв'язку</h2>
+                <form>
+                    <div class="collection">
+                        <div class="part1">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Ім'я" class="callback-input" />
+                            <label for="mail"></label>
+                            <input type="email" name="email" id="mail" placeholder="Ел. пошта" class="callback-input" />
+                            <input list=" browsers" name="fav" placeholder="Тема повідомлення" class="callback-input" />
+                            <datalist id=" browsers">
+                                <option>Підвищення зарплатні</option>
+                                <option>Коли зарплата?</option>
+                                <option>Праця за їжу</option>
+                                <option>Підтримка</option>
+                            </datalist>
+                            <button type="submit" class="callback-button">Відправити</button>
+                        </div>
+                        <div class="part2">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Повідомлення"
+                                class="textarea-callback"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li><a href="" class="footer-social-network">Facebook</a></li>
+            <li><a href="" class="footer-social-network">Instagram</a></li>
+            <li><a href="" class="footer-social-network">Twitter</a></li>
+            <li><a href="" class="footer-social-network">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
